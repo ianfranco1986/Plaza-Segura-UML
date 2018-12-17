@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_n30X4AGzEemOqMEPsHLygA" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_wrFkUAGzEemOqMEPsHLygA" name="Comportamientos">
+    <packagedElement xmi:type="uml:Package" xmi:id="_VxlV0AG0EemOqMEPsHLygA" name="Actores"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_TWlTAAG0EemOqMEPsHLygA" name="Casos de Uso">
+      <packagedElement xmi:type="uml:Usage" xmi:id="_a2dk8AG0EemOqMEPsHLygA" client="_TWlTAAG0EemOqMEPsHLygA" supplier="_VxlV0AG0EemOqMEPsHLygA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_N7h_kAG0EemOqMEPsHLygA" name="Componentes">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_49itQAG0EemOqMEPsHLygA" client="_N7h_kAG0EemOqMEPsHLygA" supplier="_Qrj3MAG0EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:Component" xmi:id="_bYf9MAHDEemOqMEPsHLygA" name="Extractor">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_gVTOYAHDEemOqMEPsHLygA" name="Frame"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_h9OOcAHDEemOqMEPsHLygA" name="Clasificador">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_ku0zYAHDEemOqMEPsHLygA" name="Evento"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_cx6xwAHEEemOqMEPsHLygA" client="_bYf9MAHDEemOqMEPsHLygA" supplier="_h9OOcAHDEemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_gFs2sAHEEemOqMEPsHLygA" client="_h9OOcAHDEemOqMEPsHLygA" supplier="_RdoBwAG-EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EfzKUAHHEemOqMEPsHLygA" name="Alerta">
+      <interfaceRealization xmi:id="_FP_bsAHIEemOqMEPsHLygA" client="_EfzKUAHHEemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-jwXwAHIEemOqMEPsHLygA" client="_bYf9MAHDEemOqMEPsHLygA" supplier="_hdd-EAHIEemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Qrj3MAG0EemOqMEPsHLygA" name="Interfaces"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_SOiQYAG1EemOqMEPsHLygA" name="Plataforma Web" useCase="_ZiHLsAG1EemOqMEPsHLygA _jmpLsAG1EemOqMEPsHLygA _Bu28cAG2EemOqMEPsHLygA _J4t_gAG2EemOqMEPsHLygA _WpsXoAG2EemOqMEPsHLygA _9MO3EAG7EemOqMEPsHLygA">
+    <nestedClassifier xmi:type="uml:Component" xmi:id="_8TNjYAHGEemOqMEPsHLygA" name="Registro de Alertas"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ZiHLsAG1EemOqMEPsHLygA" name="Ver eventos detectados" subject="_SOiQYAG1EemOqMEPsHLygA">
+      <include xmi:id="_JxYSUAG_EemOqMEPsHLygA" addition="_CdlUkAG_EemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_jmpLsAG1EemOqMEPsHLygA" name="Administrar Cámaras " subject="_SOiQYAG1EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Bu28cAG2EemOqMEPsHLygA" name="Iniciar sesión" subject="_SOiQYAG1EemOqMEPsHLygA">
+      <include xmi:id="__AssEAHAEemOqMEPsHLygA" addition="_PTWtIAG_EemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_J4t_gAG2EemOqMEPsHLygA" name="Administrar usuarios" subject="_SOiQYAG1EemOqMEPsHLygA">
+      <include xmi:id="_321tcAHAEemOqMEPsHLygA" addition="_PTWtIAG_EemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WpsXoAG2EemOqMEPsHLygA" name="Administrar notificaciones" subject="_SOiQYAG1EemOqMEPsHLygA">
+      <include xmi:id="_HyU5wAHBEemOqMEPsHLygA" addition="_7KoZcAHAEemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9MO3EAG7EemOqMEPsHLygA" name="Registrar personas de interés" subject="_SOiQYAG1EemOqMEPsHLygA">
+      <include xmi:id="_zv2C4AHAEemOqMEPsHLygA" addition="_wHy-IAHAEemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ow8vkAHEEemOqMEPsHLygA" name="Administracion Usuarios">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_tu0XwAHEEemOqMEPsHLygA" name="Usuario"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_P3CaQAHFEemOqMEPsHLygA" name="Tipo"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Dvvb0AHGEemOqMEPsHLygA" name="Privilegio"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_yacZYAHEEemOqMEPsHLygA" name="Administración de Personas de Interés">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_7raOcAHEEemOqMEPsHLygA" name="Persona de Interes"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_B6dKoAHFEemOqMEPsHLygA" name="Antecedente"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_nijNUAHFEemOqMEPsHLygA" name="Administración de Cámaras">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_2olYUAHFEemOqMEPsHLygA" name="Camara"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Z6_JQAG2EemOqMEPsHLygA" name="Operador de Seguridad">
+    <eAnnotations xmi:id="_Z6_wUAG2EemOqMEPsHLygA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_Z6_wUQG2EemOqMEPsHLygA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nvyV4AG2EemOqMEPsHLygA" memberEnd="_nvyV4QG2EemOqMEPsHLygA _nvyV4gG2EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_nvyV4QG2EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_nvyV4AG2EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_nvyV4gG2EemOqMEPsHLygA" type="_Bu28cAG2EemOqMEPsHLygA" association="_nvyV4AG2EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oUVNYAG2EemOqMEPsHLygA" memberEnd="_oUVNYQG2EemOqMEPsHLygA _oUVNYgG2EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_oUVNYQG2EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_oUVNYAG2EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_oUVNYgG2EemOqMEPsHLygA" type="_ZiHLsAG1EemOqMEPsHLygA" association="_oUVNYAG2EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pSfewAG2EemOqMEPsHLygA" memberEnd="_pSfewQG2EemOqMEPsHLygA _pSfewgG2EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_pSfewQG2EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_pSfewAG2EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_pSfewgG2EemOqMEPsHLygA" type="_jmpLsAG1EemOqMEPsHLygA" association="_pSfewAG2EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qurv8AG2EemOqMEPsHLygA" memberEnd="_qusXAAG2EemOqMEPsHLygA _qusXAQG2EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_qusXAAG2EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_qurv8AG2EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_qusXAQG2EemOqMEPsHLygA" type="_J4t_gAG2EemOqMEPsHLygA" association="_qurv8AG2EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_rKgwUAG2EemOqMEPsHLygA" memberEnd="_rKhXYAG2EemOqMEPsHLygA _rKhXYQG2EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_rKhXYAG2EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_rKgwUAG2EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_rKhXYQG2EemOqMEPsHLygA" type="_WpsXoAG2EemOqMEPsHLygA" association="_rKgwUAG2EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_tLrW0AG2EemOqMEPsHLygA" name="App. Móvil" useCase="_9jqnAAG4EemOqMEPsHLygA _B959sAG5EemOqMEPsHLygA">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_9jqnAAG4EemOqMEPsHLygA" name="Recibir notificacion" subject="_tLrW0AG2EemOqMEPsHLygA">
+      <extend xmi:id="_KxFJ4AHBEemOqMEPsHLygA" extendedCase="_WpsXoAG2EemOqMEPsHLygA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_B959sAG5EemOqMEPsHLygA" name="Acceder a eventos" subject="_tLrW0AG2EemOqMEPsHLygA">
+      <include xmi:id="_GDhOkAHBEemOqMEPsHLygA" addition="_CdlUkAG_EemOqMEPsHLygA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_6P8McAG4EemOqMEPsHLygA" name="Encargado de Seguridad Móvil">
+    <eAnnotations xmi:id="_6P8zgAG4EemOqMEPsHLygA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_6P8zgQG4EemOqMEPsHLygA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_I_0hQAG5EemOqMEPsHLygA" memberEnd="_I_0hQQG5EemOqMEPsHLygA _I_1IUAG5EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_I_0hQQG5EemOqMEPsHLygA" type="_6P8McAG4EemOqMEPsHLygA" association="_I_0hQAG5EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_I_1IUAG5EemOqMEPsHLygA" type="_9jqnAAG4EemOqMEPsHLygA" association="_I_0hQAG5EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Jv89sAG5EemOqMEPsHLygA" memberEnd="_Jv89sQG5EemOqMEPsHLygA _Jv9kwAG5EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_Jv89sQG5EemOqMEPsHLygA" type="_6P8McAG4EemOqMEPsHLygA" association="_Jv89sAG5EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_Jv9kwAG5EemOqMEPsHLygA" type="_B959sAG5EemOqMEPsHLygA" association="_Jv89sAG5EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wTZY4AG6EemOqMEPsHLygA" name="Público">
+    <eAnnotations xmi:id="_wTZY4QG6EemOqMEPsHLygA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_wTZY4gG6EemOqMEPsHLygA" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0WMf8AG6EemOqMEPsHLygA" memberEnd="_0WMf8QG6EemOqMEPsHLygA _0WMf8gG6EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_0WMf8QG6EemOqMEPsHLygA" type="_9jqnAAG4EemOqMEPsHLygA" association="_0WMf8AG6EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_0WMf8gG6EemOqMEPsHLygA" type="_wTZY4AG6EemOqMEPsHLygA" association="_0WMf8AG6EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Bc-6kAG8EemOqMEPsHLygA" memberEnd="_Bc-6kQG8EemOqMEPsHLygA _Bc-6kgG8EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_Bc-6kQG8EemOqMEPsHLygA" type="_Z6_JQAG2EemOqMEPsHLygA" association="_Bc-6kAG8EemOqMEPsHLygA"/>
+    <ownedEnd xmi:id="_Bc-6kgG8EemOqMEPsHLygA" type="_9MO3EAG7EemOqMEPsHLygA" association="_Bc-6kAG8EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_RdoBwAG-EemOqMEPsHLygA" name="Rest Api" useCase="_CdlUkAG_EemOqMEPsHLygA _PTWtIAG_EemOqMEPsHLygA _wHy-IAHAEemOqMEPsHLygA _7KoZcAHAEemOqMEPsHLygA">
+    <interfaceRealization xmi:id="_6ygwMAHHEemOqMEPsHLygA" client="_RdoBwAG-EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CdlUkAG_EemOqMEPsHLygA" name="Acceso a eventos" subject="_RdoBwAG-EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_PTWtIAG_EemOqMEPsHLygA" name="Acceso a usuarios" subject="_RdoBwAG-EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wHy-IAHAEemOqMEPsHLygA" name="Acceso a personas de interés" subject="_RdoBwAG-EemOqMEPsHLygA"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_7KoZcAHAEemOqMEPsHLygA" name="Acceso notificaciones" subject="_RdoBwAG-EemOqMEPsHLygA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Iz9gcAHCEemOqMEPsHLygA" name="Detección de Eventos Delictuales" node="_p2bb0AHCEemOqMEPsHLygA" group="_hxAz4AHCEemOqMEPsHLygA" partition="_hxAz4AHCEemOqMEPsHLygA">
+    <group xmi:type="uml:ActivityPartition" xmi:id="_hxAz4AHCEemOqMEPsHLygA" name="Login"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_p2bb0AHCEemOqMEPsHLygA" name="Initial1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_fwtWwAHHEemOqMEPsHLygA" client="_RdoBwAG-EemOqMEPsHLygA" supplier="_SOiQYAG1EemOqMEPsHLygA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_beCLMAHIEemOqMEPsHLygA" client="_RdoBwAG-EemOqMEPsHLygA" supplier="_tLrW0AG2EemOqMEPsHLygA"/>
+  <packagedElement xmi:type="uml:Device" xmi:id="_hdd-EAHIEemOqMEPsHLygA" name="Cámara IoT"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_FKyrQAHLEemOqMEPsHLygA" client="_Jcfb4AHJEemOqMEPsHLygA" supplier="__oH-0AHIEemOqMEPsHLygA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dO3O0AH4EemOqMEPsHLygA" name="TCP/IP" memberEnd="_dO3O0QH4EemOqMEPsHLygA _dO314gH4EemOqMEPsHLygA" navigableOwnedEnd="_dO3O0QH4EemOqMEPsHLygA _dO314gH4EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_dO3O0QH4EemOqMEPsHLygA" name="procesamiento - Ubuntu 18.04s" association="_dO3O0AH4EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dO314AH4EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dO314QH4EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dO314gH4EemOqMEPsHLygA" name="servidor de Datos - Ubuntu 18.04s" association="_dO3O0AH4EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dO314wH4EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dO315AH4EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_5xndoAH4EemOqMEPsHLygA" name="Servidor de Datos - Ubuntu 18.04">
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_8ZdpoAH4EemOqMEPsHLygA" name="Mysql Server 5.7"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_CefHIAH5EemOqMEPsHLygA" name="Servidor de Procesamiento - Ubuntu 18.04">
+    <nestedClassifier xmi:type="uml:Node" xmi:id="_RUG4YAHJEemOqMEPsHLygA" name=""/>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_tTfTkAH5EemOqMEPsHLygA" name="Conda Enviroment - Python 3.7">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="__oH-0AHIEemOqMEPsHLygA" name="Frame">
+        <manifestation xmi:id="_E44GwAHJEemOqMEPsHLygA" client="__oH-0AHIEemOqMEPsHLygA" supplier="_bYf9MAHDEemOqMEPsHLygA" utilizedElement="_bYf9MAHDEemOqMEPsHLygA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_Jcfb4AHJEemOqMEPsHLygA" name="Evento Delictual">
+        <manifestation xmi:id="_MRnO4AHJEemOqMEPsHLygA" client="_Jcfb4AHJEemOqMEPsHLygA" supplier="_h9OOcAHDEemOqMEPsHLygA" utilizedElement="_h9OOcAHDEemOqMEPsHLygA"/>
+        <manifestation xmi:id="_aT4g4AH3EemOqMEPsHLygA" client="_Jcfb4AHJEemOqMEPsHLygA" supplier="_NezI0AHLEemOqMEPsHLygA" utilizedElement="_NezI0AHLEemOqMEPsHLygA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_NezI0AHLEemOqMEPsHLygA" name="Notificacion">
+        <generalization xmi:id="_eUI4AAH8EemOqMEPsHLygA" general="_RdoBwAG-EemOqMEPsHLygA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_0gKcAAIBEemOqMEPsHLygA" name="Flesk Server">
+        <nestedClassifier xmi:type="uml:Artifact" xmi:id="_997-AAIBEemOqMEPsHLygA" name="Process Frame">
+          <manifestation xmi:id="_LlR9cAICEemOqMEPsHLygA" client="_997-AAIBEemOqMEPsHLygA" supplier="_h9OOcAHDEemOqMEPsHLygA" utilizedElement="_h9OOcAHDEemOqMEPsHLygA"/>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedNode>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_r1yKAAH6EemOqMEPsHLygA" name="Servidor de Aplicaciones - Ubuntu 18.04">
+    <nestedClassifier xmi:type="uml:ExecutionEnvironment" xmi:id="_ZDsT4AHBEemOqMEPsHLygA" name="Wildfly 14.01 Final">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_YjQT8AH7EemOqMEPsHLygA" name="Plataforma.war">
+        <generalization xmi:id="_gIGwAAH8EemOqMEPsHLygA" general="_gnFAcAH7EemOqMEPsHLygA"/>
+        <manifestation xmi:id="_5bFFkAH7EemOqMEPsHLygA" client="_YjQT8AH7EemOqMEPsHLygA" supplier="_SOiQYAG1EemOqMEPsHLygA" utilizedElement="_SOiQYAG1EemOqMEPsHLygA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_gnFAcAH7EemOqMEPsHLygA" name="RestfulAPI.war">
+        <generalization xmi:id="_Fgb7kAIBEemOqMEPsHLygA" general="_j4GTAAIAEemOqMEPsHLygA"/>
+        <manifestation xmi:id="_7V6akAH7EemOqMEPsHLygA" client="_gnFAcAH7EemOqMEPsHLygA" supplier="_RdoBwAG-EemOqMEPsHLygA" utilizedElement="_RdoBwAG-EemOqMEPsHLygA"/>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_j4GTAAIAEemOqMEPsHLygA" name="Messager.war"/>
+    </nestedClassifier>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_tw4S0AH8EemOqMEPsHLygA" name="Terminal Operador">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_JOh6wAH9EemOqMEPsHLygA" name="Web Browser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_EVknwAH9EemOqMEPsHLygA" name="Movil Operador ">
+    <nestedClassifier xmi:type="uml:Artifact" xmi:id="_PRNO4AH9EemOqMEPsHLygA" name="App"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Fw45wAH-EemOqMEPsHLygA" name="JDBC" memberEnd="_Fw45wQH-EemOqMEPsHLygA _Fw45xAH-EemOqMEPsHLygA" navigableOwnedEnd="_Fw45wQH-EemOqMEPsHLygA _Fw45xAH-EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_Fw45wQH-EemOqMEPsHLygA" name="mysql Server 5.7s" type="_8ZdpoAH4EemOqMEPsHLygA" association="_Fw45wAH-EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fw45wgH-EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fw45wwH-EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Fw45xAH-EemOqMEPsHLygA" name="rest Apis" type="_RdoBwAG-EemOqMEPsHLygA" association="_Fw45wAH-EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fw45xQH-EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fw45xgH-EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MNgX4AH-EemOqMEPsHLygA" name="HTTPS" memberEnd="_MNg-8AH-EemOqMEPsHLygA _MNg-8wH-EemOqMEPsHLygA" navigableOwnedEnd="_MNg-8AH-EemOqMEPsHLygA _MNg-8wH-EemOqMEPsHLygA">
+    <ownedEnd xmi:id="_MNg-8AH-EemOqMEPsHLygA" name="plataforma.wars" type="_YjQT8AH7EemOqMEPsHLygA" association="_MNgX4AH-EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNg-8QH-EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MNg-8gH-EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MNg-8wH-EemOqMEPsHLygA" name="web Browsers" type="_tw4S0AH8EemOqMEPsHLygA" association="_MNgX4AH-EemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MNg-9AH-EemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MNg-9QH-EemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_NuySgAIAEemOqMEPsHLygA" name="Google Cloud Message Server"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_V0eAMAIAEemOqMEPsHLygA" name="TCP/IP" memberEnd="_V0eAMQIAEemOqMEPsHLygA _V0eANAIAEemOqMEPsHLygA" navigableOwnedEnd="_V0eAMQIAEemOqMEPsHLygA _V0eANAIAEemOqMEPsHLygA">
+    <ownedEnd xmi:id="_V0eAMQIAEemOqMEPsHLygA" name="google Cloud Message Servers" type="_NuySgAIAEemOqMEPsHLygA" association="_V0eAMAIAEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V0eAMgIAEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0eAMwIAEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_V0eANAIAEemOqMEPsHLygA" name="apps" type="_EVknwAH9EemOqMEPsHLygA" association="_V0eAMAIAEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V0eANQIAEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V0eANgIAEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pAoTEAIAEemOqMEPsHLygA" name="TCP/IP" memberEnd="_pAoTEQIAEemOqMEPsHLygA _pAoTFAIAEemOqMEPsHLygA" navigableOwnedEnd="_pAoTEQIAEemOqMEPsHLygA _pAoTFAIAEemOqMEPsHLygA">
+    <ownedEnd xmi:id="_pAoTEQIAEemOqMEPsHLygA" name="messager.wars" type="_j4GTAAIAEemOqMEPsHLygA" association="_pAoTEAIAEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pAoTEgIAEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pAoTEwIAEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_pAoTFAIAEemOqMEPsHLygA" name="google Cloud Message Servers" type="_NuySgAIAEemOqMEPsHLygA" association="_pAoTEAIAEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pAoTFQIAEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pAoTFgIAEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Vw-8cAICEemOqMEPsHLygA" name="TCP/IP" memberEnd="_Vw-8cQICEemOqMEPsHLygA _Vw-8dAICEemOqMEPsHLygA" navigableOwnedEnd="_Vw-8cQICEemOqMEPsHLygA _Vw-8dAICEemOqMEPsHLygA">
+    <ownedEnd xmi:id="_Vw-8cQICEemOqMEPsHLygA" name="process Frames" type="_997-AAIBEemOqMEPsHLygA" association="_Vw-8cAICEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vw-8cgICEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vw-8cwICEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Vw-8dAICEemOqMEPsHLygA" name="plataforma.wars" type="_YjQT8AH7EemOqMEPsHLygA" association="_Vw-8cAICEemOqMEPsHLygA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Vw_jgAICEemOqMEPsHLygA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Vw_jgQICEemOqMEPsHLygA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
